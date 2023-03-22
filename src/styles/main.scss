@@ -74,3 +74,37 @@ body {
   }
 }
 
+.hero-content {
+  text-align: center;
+  h1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Roboto-Bold";
+    font-size: 72px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: 72px;
+  }
+  p {
+    color: rgba(255, 255, 255, 1);
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: 24px;
+  }
+}
+
+.hero {
+  background-image: url("/assets/images/2cbdc7b29b8b729db1b0ad933d96d3cbc1f83268.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
