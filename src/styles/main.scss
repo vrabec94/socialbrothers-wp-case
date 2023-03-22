@@ -57,3 +57,20 @@ body {
   height: 48px;
   border-color: #141414;
 }
+
+.footer-container {
+  background-color: #141414;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  width: 1440px;
+  height: 81px;
+
+  a {
+    padding: 30px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
+

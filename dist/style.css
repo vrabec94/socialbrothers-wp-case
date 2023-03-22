@@ -5120,4 +5120,19 @@ body {
   border-color: #141414;
 }
 
+.footer-container {
+  background-color: #141414;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  width: 1440px;
+  height: 81px;
+}
+.footer-container a {
+  padding: 30px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=style.css.map*/

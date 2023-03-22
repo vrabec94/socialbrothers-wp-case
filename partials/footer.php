@@ -3,7 +3,9 @@
 </main>
 
 <footer>
-  <div class="container">
-    Footer
+  <div class="footer-container">
+  <a href="/">Allgemene voorwarden</a>
+      <a href="/">Privacy statement</a>
+      <a href="/">Toegankelijksheidsverklaring</a>
   </div>
 </footer>
