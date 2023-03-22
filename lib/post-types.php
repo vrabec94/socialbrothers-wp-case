@@ -7,6 +7,7 @@
  */
 function post_types_init(): void
 {
+    // Register "blog" post type
     register_post_type('blog', [
         'labels' => [
             'name'          => __('Blogs', '_SBB'),
@@ -20,6 +21,20 @@ function post_types_init(): void
         'has_archive'       => true,
         'supports'          => ['title', 'editor', 'thumbnail'],
 
+        'show_in_rest'      => true,
+    ]);
+
+    // Register "events" post type
+    register_post_type('events', [
+        'labels' => [
+            'name'          => __('Events', '_SBB'),
+            'singular_name' => __('Event', '_SBB'),
+        ],
+        'menu_icon'         => 'dashicons-calendar',
+        'menu_position'     => 23,
+        'public'            => true,
+        'has_archive'       => true,
+        'supports'          => ['title', 'editor', 'thumbnail'],
         'show_in_rest'      => true,
     ]);
 }

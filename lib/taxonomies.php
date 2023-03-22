@@ -7,6 +7,7 @@
  */
 function taxonomies_init(): void
 {
+    // Register "category" taxonomy for "blog" post type
     register_taxonomy(
         'category',
         'blog',
@@ -20,6 +21,22 @@ function taxonomies_init(): void
             'show_ui'           => true,
             'show_admin_column' => true,
             'rewrite'           => false,
+            'hierarchical'      => true,
+        ]
+    );
+    // Register "locations" taxonomy for "events" post type
+    register_taxonomy(
+        'locations',
+        'events',
+        [
+            'labels' => [
+                'name'          => __('Locations', '_SBB'),
+                'singular_name' => __('Location', '_SBB'),
+            ],
+            'public'            => true,
+            'show_ui'           => true,
+            'show_admin_column' => true,
+            'rewrite'           => true,
             'hierarchical'      => true,
         ]
     );
