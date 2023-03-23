@@ -1,21 +1,29 @@
 <?php defined('ABSPATH') || exit('Forbidden'); ?>
 
 <header>
-  <div class="header-container">
-    <div class="header-logo">
-    <a href="<?php echo esc_url(home_url('/')); ?>">
+  <div class="container-fluid custom-header">
+    <nav class="navbar navbar-expand-lg navbar-light vertical-align">
+      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo.png'); ?>" alt="Social Brothers">
       </a>
-    </div>
-    <div class="menu">
-      <a href="/blog">Blog</a>
-      <a href="/events">Events</a>
-      <div class="search-icon">
-					<img src="search.png" alt="Search Icon">
-				</div>
-    </div>
-    <button type="button" id="login-btn">Login</button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/events">Events</a>
+          </li>
+        </ul>
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button type="button" class="custom-btn">Log in</button>
+      </div>
+    </nav>
   </div>
 </header>
-
 <main>
