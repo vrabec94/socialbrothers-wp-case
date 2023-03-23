@@ -1,18 +1,14 @@
-<!--
-<div class="card">
-  <h2><?php the_title(); ?></h2>
-  <?php the_content(); ?>
-</div>
--->
+<?php defined('ABSPATH') || exit('Forbidden'); ?>
+
 <div class="col-4">
     <div class="card" style="width: 18rem;">
         <?php if (has_post_thumbnail()) : ?>
-            <div class="card-img-top" style="position: relative;">
+            <div class="card-img-top card-img-width" style="position: relative;">
+                <span class="tags">
+                    <?php echo get_the_category_list(', '); ?>
+                </span>
                 <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail('medium', ['alt' => 'Featured image']); ?>
-                    <span class="badge badge-primary" style="position: absolute; top: 10px; left: 10px;">
-                        <?php echo get_the_category_list(', '); ?>
-                    </span>
                 </a>
             </div>
         <?php endif; ?>

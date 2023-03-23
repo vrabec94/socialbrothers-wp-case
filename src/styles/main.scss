@@ -122,3 +122,29 @@ body {
     line-height: 24px;
   }
 }
+.blogs-row {
+  padding: 5% 11.5% 0% 11.5%;
+}
+.events-row {
+  padding: 5% 11.5% 5% 11.5%;
+}
+.tags {
+  width: 84px;
+  height: 32px;
+  position: absolute;
+  border-radius: 4px;
+  opacity: 1;
+  background-color: rgba(237, 237, 237, 1);
+  bottom: 10px;
+  left: 10px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #141414;
+  }
+}
+.card-img-top {
+  img {
+    width: 286px;
+  }
+}
