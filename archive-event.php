@@ -1,5 +1,7 @@
 <?php defined('ABSPATH') || exit('Forbidden');
-
+/**
+ * Template Name: Events Archive
+ */
 get_header();
 
 ?>
@@ -7,7 +9,7 @@ get_header();
     <div class="hero-content img-fluid row">
         <div class="col-lg-3"></div>
         <div class="col-lg-6">
-            <h1>Blogs</h1>
+            <h1>Events</h1>
         </div>
         <div class="col-lg-3"></div>
     </div>
@@ -15,7 +17,7 @@ get_header();
 <div class="row blogs-row">
     <?php
     $args = array(
-        'post_type' => 'blog',
+        'post_type' => 'events',
         'posts_per_page' => -1,
         'orderby' => 'date',
     );

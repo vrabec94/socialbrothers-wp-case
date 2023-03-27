@@ -15,7 +15,7 @@
             <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/events">Events</a>
+            <a class="nav-link" href="/events-archive">Events</a>
           </li>
         </ul>
         <div class="search-icon">
