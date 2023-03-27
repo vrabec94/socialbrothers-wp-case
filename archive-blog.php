@@ -1,5 +1,7 @@
 <?php defined('ABSPATH') || exit('Forbidden');
-
+/**
+ * Template Name: Blog Archive
+ */
 get_header();
 
 ?>
@@ -14,6 +16,7 @@ get_header();
 </section>
 <div class="row blogs-row">
     <?php
+    // Display all blog posts ordered by date
     $args = array(
         'post_type' => 'blog',
         'posts_per_page' => -1,
@@ -27,7 +30,8 @@ get_header();
             echo '</div>';
         endwhile;
     endif;
-    wp_reset_postdata(); // Reset post data after the loop
+    // Reset post data
+    wp_reset_postdata();
     ?>
 </div>
 

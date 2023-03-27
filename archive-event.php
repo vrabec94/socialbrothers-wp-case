@@ -16,6 +16,7 @@ get_header();
 </section>
 <div class="row blogs-row">
     <?php
+    // Display all events posts ordered by date
     $args = array(
         'post_type' => 'events',
         'posts_per_page' => -1,
@@ -29,7 +30,8 @@ get_header();
             echo '</div>';
         endwhile;
     endif;
-    wp_reset_postdata(); // Reset post data after the loop
+    // Reset post data
+    wp_reset_postdata();
     ?>
 </div>
 

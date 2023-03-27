@@ -3,7 +3,6 @@
 get_header();
 ?>
 
-
 <section class="hero">
     <div class="hero-content img-fluid row">
         <div class="col-lg-3"></div>
@@ -18,6 +17,7 @@ get_header();
 <div class="row blogs-row">
     <h2>De nieuwste blog</h2>
     <?php
+    // Find the three latest blog posts to display on front page
     $args = array(
         'post_type' => 'blog',
         'posts_per_page' => 3,
@@ -32,12 +32,14 @@ get_header();
             echo '</div>';
         endwhile;
     endif;
-    wp_reset_postdata(); // Reset post data after the loop
+    // Reset post data
+    wp_reset_postdata();
     ?>
 </div>
 <div class="row events-row">
     <h2>Opkomende events</h2>
     <?php
+    // Find the three latest event posts to display on front page
     $args = array(
         'post_type' => 'events',
         'posts_per_page' => 3,
@@ -52,7 +54,8 @@ get_header();
             echo '</div>';
         endwhile;
     endif;
-    wp_reset_postdata(); // Reset post data after the loop
+    // Reset post data
+    wp_reset_postdata();
     ?>
 </div>
 

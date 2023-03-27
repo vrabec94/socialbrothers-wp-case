@@ -1,5 +1,6 @@
 <?php defined('ABSPATH') || exit('Forbidden'); ?>
 
+<!-- Card Template for all blog posts and event posts-->
 <div class="col-4">
     <div class="card" style="width: 18rem;">
         <?php if (has_post_thumbnail()) : ?>
